@@ -1,0 +1,48 @@
+.container-fluid{
+    background-color: #171717;
+    padding: 0 25%;
+    text-align: center;
+    align-items: center;
+}
+
+.title-heading{
+    font-size: 4rem;
+    font-family: 'Kirang Haerang', cursive;
+    color: cornsilk;
+}
+
+.btn{
+    height: 180px;
+    width: 180px;
+    margin: 25px;
+    border: 2.5px solid;
+    border-radius: 20px;
+}
+
+.second-heading{
+    font-size: 2rem;
+    font-family: 'Kirang Haerang', cursive;
+    color: cornsilk;
+}
+
+.input-group-text, .form-select, .form-text{
+    background-color:#171717 ;
+    color: cornsilk;
+    font-family: 'Kirang Haerang', cursive;
+    font-size: 1.5rem;
+}
+
+@media (max-width:480px){
+    .input-group-text, .form-select, .form-text{
+        background-color:#171717 ;
+        color: cornsilk;
+        font-family: 'Kirang Haerang', cursive;
+        font-size: 1rem;
+    }
+
+    .second-heading{
+        font-size: 1.5rem;
+        font-family: 'Kirang Haerang', cursive;
+        color: cornsilk;
+    }
+}
