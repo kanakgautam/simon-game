@@ -54,7 +54,46 @@ function nextSequence() {
 
     gamePattern.push(randomChosenColour);
 
-    $("#" + randomChosenColour).fadeOut(300).fadeIn(300).fadeOut(300).fadeIn(300);
+    if(randomChosenColour === "green")
+    {
+        $("#green").removeClass("btn-outline-success");
+        $("#green").addClass("btn-success");
+
+        setTimeout(function(){
+            $("#green").removeClass("btn-success");
+            $("#green").addClass("btn-outline-success");
+        },500);
+    }
+    else if(randomChosenColour === "yellow")
+    {
+        $("#yellow").removeClass("btn-outline-warning");
+        $("#yellow").addClass("btn-warning");
+
+        setTimeout(function(){
+            $("#yellow").removeClass("btn-warning");
+            $("#yellow").addClass("btn-outline-warning");
+        },500);
+    }
+    else if(randomChosenColour === "blue")
+    {
+        $("#blue").removeClass("btn-outline-info");
+        $("#blue").addClass("btn-info");
+
+        setTimeout(function(){
+            $("#blue").removeClass("btn-info");
+            $("#blue").addClass("btn-outline-info");
+        },500);
+    }
+    if(randomChosenColour === "red")
+    {
+        $("#red").removeClass("btn-outline-danger");
+        $("#red").addClass("btn-danger");
+
+        setTimeout(function(){
+            $("#red").removeClass("btn-danger");
+            $("#red").addClass("btn-outline-danger");
+        },500);
+    }
 
 }
 
